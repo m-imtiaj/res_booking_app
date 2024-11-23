@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>Redb Restaurant</h1>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.php">Reservation</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Reserve a table with us and enjoy a great meal!</p>
+        <a href="reservation.html" class="btn">Make a Reservation</a>
+    </section>
+
+    <!-- Location Section -->
+<section class="location">
+    <p style="text-align: center;">Our restaurant is located at:</p>
+    <p style="text-align: center;"><strong>London Stepney Green</strong></p>
+    <p id="distance" style="text-align: center; color: #3498db;">Calculating distance...</p>
+</section>
+
+<!-- Include Google Maps JavaScript API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf42dvGC0MLL-QbRCCIta004hNlbG0oDM"></script>
+<script src="location.js"></script>
+<div style="display: flex; justify-content: center; border: 10px; margin: 20px;">  
+    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.578043235224!2d-0.054491187506520676!3d51.52095687169885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cd6baa861e1%3A0x733fe36e9054a187!2sThe%20Gym%20Group%20London%20Stepney%20Green!5e0!3m2!1sen!2suk!4v1731611966487!5m2!1sen!2suk" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div> 
+
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>123 Restaurant St, Food City</p>
+            <p>Email: admin@restaurant.com</p>
+            <p>Phone: (0)123 456-789</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.php">Reservation</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Rebb Restaurant. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
