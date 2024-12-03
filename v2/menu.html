@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Jack and Sons</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.php">Reservation</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cart.html">Order (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <h2>Our Menu</h2>
+         <!-- Appetizers Section -->
+         <div class="menu-category">
+            <div class="menu-box">
+                <img src="images/dish3.jpg" alt="Bruschetta" class="menu-image">
+                <div class="menu-details">
+                    <h4>Bruschetta</h4>
+                    <p>Grilled bread topped with tomatoes, garlic, and basil</p>
+                    <span>$8.00</span><br>
+                    <button onclick="addToCart('Bruschetta', 8)">Add to Order</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="images/dish1.jpg" alt="Garlic Bread" class="menu-image">
+                <div class="menu-details">
+                    <h4>Garlic Bread</h4>
+                    <p>Toasted bread with garlic butter and herbs</p>
+                    <span>$6.00</span><br>
+                    <button onclick="addToCart('Garlic Bread', 6)">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Courses Section -->
+        <div class="menu-category">
+            <div class="menu-box">
+                <img src="images/dish3.jpg" alt="Grilled Salmon" class="menu-image">
+                <div class="menu-details">
+                    <h4>Grilled Salmon</h4>
+                    <p>Fresh salmon fillet grilled to perfection, served with vegetables</p>
+                    <span>$20.00</span><br>
+                    <button onclick="addToCart('Grilled Salmon', 20)">Add to Order</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="images/dish4.jpg" alt="Spaghetti Carbonara" class="menu-image">
+                <div class="menu-details">
+                    <h4>Spaghetti Carbonara</h4>
+                    <p>Classic Italian pasta with creamy sauce, bacon, and parmesan</p>
+                    <span>$15.00</span><br>
+                    <button onclick="addToCart('Spaghetti Carbonara', 15)">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts Section -->
+        <div class="menu-category">
+            <div class="menu-box">
+                <img src="images/dish1.jpg" alt="Tiramisu" class="menu-image">
+                <div class="menu-details">
+                    <h4>Tiramisu</h4>
+                    <p>Traditional Italian dessert with coffee-soaked layers and mascarpone</p>
+                    <span>$10.00</span><br>
+                    <button onclick="addToCart('Tiramisu', 10)">Add to Order</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="images/dish2.jpg" alt="Cheesecake" class="menu-image">
+                <div class="menu-details">
+                    <h4>Cheesecake</h4>
+                    <p>Creamy cheesecake served with berry sauce</p>
+                    <span>$8.00</span><br>
+                    <button onclick="addToCart('Cheesecake', 8)">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        <!-- Appetizers Section -->
+        <div class="menu-category">
+            <div class="menu-box">
+                <img src="images/dish3.jpg" alt="Bruschetta" class="menu-image">
+                <div class="menu-details">
+                    <h4>Bruschetta</h4>
+                    <p>Grilled bread topped with tomatoes, garlic, and basil</p>
+                    <span>$8.00</span><br>
+                    <button onclick="addToCart('Bruschetta', 8)">Add to Order</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="images/dish1.jpg" alt="Garlic Bread" class="menu-image">
+                <div class="menu-details">
+                    <h4>Garlic Bread</h4>
+                    <p>Toasted bread with garlic butter and herbs</p>
+                    <span>$6.00</span><br>
+                    <button onclick="addToCart('Garlic Bread', 6)">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Courses Section -->
+        <div class="menu-category">
+            <div class="menu-box">
+                <img src="images/dish3.jpg" alt="Grilled Salmon" class="menu-image">
+                <div class="menu-details">
+                    <h4>Grilled Salmon</h4>
+                    <p>Fresh salmon fillet grilled to perfection, served with vegetables</p>
+                    <span>$20.00</span><br>
+                    <button onclick="addToCart('Grilled Salmon', 20)">Add to Order</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="images/dish4.jpg" alt="Spaghetti Carbonara" class="menu-image">
+                <div class="menu-details">
+                    <h4>Spaghetti Carbonara</h4>
+                    <p>Classic Italian pasta with creamy sauce, bacon, and parmesan</p>
+                    <span>$15.00</span><br>
+                    <button onclick="addToCart('Spaghetti Carbonara', 15)">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts Section -->
+        <div class="menu-category">
+            <div class="menu-box">
+                <img src="images/dish1.jpg" alt="Tiramisu" class="menu-image">
+                <div class="menu-details">
+                    <h4>Tiramisu</h4>
+                    <p>Traditional Italian dessert with coffee-soaked layers and mascarpone</p>
+                    <span>$10.00</span><br>
+                    <button onclick="addToCart('Tiramisu', 10)">Add to Order</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="images/dish2.jpg" alt="Cheesecake" class="menu-image">
+                <div class="menu-details">
+                    <h4>Cheesecake</h4>
+                    <p>Creamy cheesecake served with berry sauce</p>
+                    <span>$8.00</span><br>
+                    <button onclick="addToCart('Cheesecake', 8)">Add to Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 L. Avenue, London</p>
+                <p>Email: imtiaj@restaurant.com</p>
+                <p>Phone: (0)777 7940-573</p>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.php">Reservation</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rebb Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
