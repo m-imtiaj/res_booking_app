@@ -69,7 +69,7 @@ async function checkout() {
         const { clientSecret } = await response.json();
 
         // Initialize Stripe
-        const stripe = Stripe('pk_test_51QOmkVFJMTSsn8gcOWaFtvScmMsI3OPhEDWpTHHqLOKSlVytKcrdkYU1hTpovTLehhbyNrcbJHV9sN6K8DXtt8Vv00KJbBae6l'); // Replace with your Stripe Publishable Key
+        const stripe = Stripe('pk_test_51QKJbBae6l'); //  Stripe Publishable Key
 
         // Confirm Payment
         const { error } = await stripe.confirmCardPayment(clientSecret, {
