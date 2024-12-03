@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        /* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+.modal-content {
+    background: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.modal-content button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-content button:hover {
+    background-color: #2980b9;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Jack and Sons</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.php">Reservation</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cart.html">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="cart">
+        <h2 style="text-align: center;">Your Order</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <h3>Total: $<span id="cart-total">0.00</span></h3>
+        </div>
+        <button onclick="checkout()" class="checkout-btn">Order Now</button>
+    </section>
+    
+
+   <!-- Payment Form Modal -->
+<div id="paymentFormModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-button" onclick="closePaymentForm()">&times;</span>
+        <h2>Payment Information</h2>
+        <form id="paymentForm">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+            <label for="nameOnCard">Name on Card:</label>
+            <input type="text" id="nameOnCard" name="nameOnCard" placeholder="John Doe" required>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+</div>
+
+<!-- Thanks Message Modal -->
+<div id="thanksMessageModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h2>Thank You!</h2>
+        <p>Your order has been placed successfully.</p>
+        <button onclick="closeThanksMessage()">Close</button>
+    </div>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

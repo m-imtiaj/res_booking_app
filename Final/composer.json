@@ -1,0 +1,11 @@
+{
+    "name": "smimtiaj/redb",
+    "require": {
+        "stripe/stripe-php": "^16.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Smimtiaj\\Redb\\": "src/"
+        }
+    }
+}
