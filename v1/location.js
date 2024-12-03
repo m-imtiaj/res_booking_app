@@ -1,5 +1,5 @@
 // Restaurant's coordinates
-const restaurantLocation = { lat: 51.5211242, lng: -0.052193 }; // Replace with actual latitude and longitude
+const restaurantLocation = { lat: 51.5211242, lng: -0.052193 }; 
 
 // Function to calculate distance using Google Distance Matrix API
 function calculateDistance(userLat, userLng) {
